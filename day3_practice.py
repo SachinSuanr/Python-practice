@@ -50,3 +50,33 @@ for i in range(1,5):
         
         
     print()
+    
+#task 5 
+total = 0
+even = 0
+odd = 0
+sum = 0
+largest = None
+
+while True:
+    nmb = int(input("Enter the number: "))
+    
+    
+    if(nmb == 0):
+        break
+    total += 1
+    sum += nmb
+    
+    if (nmb % 2 == 0):
+        even += 1
+    else:
+        odd += 1
+        
+    if largest is None or nmb > largest:
+        largest = nmb
+        
+print(f"The total number is {total}")
+print(f"The total sum is {sum}")
+print(f"The even number is {even}")
+print(f"The odd is {odd}")
+print(f"The largest number is {largest}")
